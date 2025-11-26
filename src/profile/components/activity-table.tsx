@@ -12,7 +12,7 @@ import { truncateMiddle } from "@/shared/lib/utils";
 const activities = [
   {
     id: 1,
-    event: "Sales",
+    event: "Sale",
     item: "Cosmic Panther",
     price: 0.07393,
     qty: 1,
