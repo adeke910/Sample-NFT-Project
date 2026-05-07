@@ -21,6 +21,7 @@ function MainRoutes() {
 export const AppRoutes = () => {
   return (
     <Routes>
+      <Route path="/" element={<Navigate to="/home" replace />} />
       <Route path="/*" element={<MainRoutes />} />
     </Routes>
   );
