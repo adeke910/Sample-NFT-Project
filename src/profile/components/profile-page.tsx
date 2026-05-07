@@ -2,6 +2,7 @@ import MoreInfoCard from "@/nft-details/components/more-infor-card";
 import { CustomEmpty } from "@/shared/components/ui/empty";
 import Tabs from "@/shared/components/ui/tabs";
 import ActivityTable from "./activity-table";
+import imagePlaceholder from "@/shared/assets/imageplaceholder.svg";
 
 const user = {
   displayName: "0x3883978909",
@@ -138,16 +139,16 @@ export default function ProfilePage() {
       <div className="flex relative h-[300px] border border-border-1 shrink-0 min-w-0">
         <img
           alt="cover"
-          src={user.profileImage || "/imgplaceholder.png"}
-          onError={(e) => (e.currentTarget.src = "/imgplaceholder.png")}
+          src={user.profileImage || imagePlaceholder}
+          onError={(e) => (e.currentTarget.src = imagePlaceholder)}
           className=" w-full h-full object-cover backdrop-blur-xs"
         />
 
         <div className="absolute md:left-10 left-5 top-[30%] gap-4 flex flex-col items-center">
           <img
             alt="profile"
-            src={user.profileImage || "/imgplaceholder.png"}
-            onError={(e) => (e.currentTarget.src = "/imgplaceholder.png")}
+            src={user.profileImage || imagePlaceholder}
+            onError={(e) => (e.currentTarget.src = imagePlaceholder)}
             className="w-24 h-24 rounded-full object-fill shadow-lg"
           />
         </div>
