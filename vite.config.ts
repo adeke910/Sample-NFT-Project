@@ -6,7 +6,7 @@ import svgr from "vite-plugin-svgr";
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "./",
+  base: "/Sample-NFT-Project/",
   plugins: [svgr(), react(), tailwindcss()],
   resolve: {
     alias: {
