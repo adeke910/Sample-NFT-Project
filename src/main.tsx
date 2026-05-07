@@ -4,7 +4,7 @@ import { BrowserRouter } from 'react-router'
 import App from './App'
 
 createRoot(document.getElementById('root')!).render(
-  <BrowserRouter>
+  <BrowserRouter basename={import.meta.env.BASE_URL}>
   <App />
 </BrowserRouter>,
 )

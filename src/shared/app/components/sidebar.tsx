@@ -17,7 +17,7 @@ export default function Sidebar({
       <div className="hidden fixed  group lg:flex z-9999 h-screen flex-col border-r border-border-1 bg-bg-primary px-2 py-4 w-[52px] hover:w-[225px] transition-[width] duration-300 ease-out-quint overflow-hidden">
         <Link
           className="hidden items-center gap-3 mb-6 group-hover:flex transition-opacity duration-300 ease-out-quint border-b border-border-1 lg:border-b-0"
-          to={"/"}
+          to={"/home"}
           replace
         >
           <HomeLogo />
@@ -25,7 +25,7 @@ export default function Sidebar({
 
         <Link
           className="flex items-center mb-6 opacity-100 group-hover:hidden transition-opacity duration-300 ease-out-quint"
-          to={"/"}
+          to={"/home"}
           replace
         >
           <Legend className="w-full h-10 text-text-primary" />
@@ -76,7 +76,7 @@ export default function Sidebar({
           // onClick={(e) => e.stopPropag ation()}
         >
           <div className="flex items-center justify-between border-b border-border-1 py-8 px-6">
-            <Link to={"/"} replace>
+            <Link to={"/home"} replace>
               <HomeLogo className="w-24" />
             </Link>
             <div

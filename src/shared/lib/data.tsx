@@ -12,7 +12,7 @@ import {
 export const sideBarMenu = [
   {
     title: "Home",
-    url: "/",
+    url: "/home",
     icon: <HomeIcon />,
   },
   {
